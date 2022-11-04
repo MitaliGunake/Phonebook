@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}            
+    <div class="parent m-4">
+        <form action="/getname" method="POST" class="searchform">
+            <div class="mb-2">
+                <label for="exampleInputPassword1" class="form-label">Enter here if you want to search by Firstname, Lastname or Contact </label>
+                <input type="tel" class="form-control" id="exampleInput" placeholder="Enter here first/last/contact" name="searchcolumn">
+                
+                <label for="exampleInputPassword1" class="form-label">Enter data here </label>
+                <input type="tel" class="form-control" id="exampleInput" placeholder="Enter data here" name="searchfor">
+            </div>
+            <button type="submit" class="btn btn-success mb-2"> Search </button>
+        </form>
+    </div>
+     
+    
+
+{% endblock body %}
